@@ -4,11 +4,11 @@ import Desc from "./Desc";
 
 function Intro() {
   return (
-    <>
+    <div id="intro">
       <Welcome />
       <Tree />
       <Desc />
-    </>
+    </div>
   );
 }
 

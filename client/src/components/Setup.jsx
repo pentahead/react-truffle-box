@@ -1,40 +1,36 @@
 function Setup() {
-
   return (
-    <>
-      <h2>Preparation</h2>
-
-      <details>
-        <summary>Install</summary>
-        <p>Install Truffle and Ganache globally.</p>
+    <div id="setup">
+      <h2 className="text-info">Persiapan</h2>
+      <details className="my-3">
+        <summary className="text-primary">Instal</summary>
+        <p>Instal Truffle dan Ganache secara global.</p>
         <code>$ npm install -g truffle ganache</code>
       </details>
-
-      <details>
-        <summary>Ganache and MetaMask</summary>
+      <details className="my-3">
+        <summary className="text-primary">Ganache dan MetaMask</summary>
         <p>
-          Open a terminal and run Ganache, a simulated Ethereum blockchain on your machine.
+          Buka terminal dan jalankan Ganache, blockchain Ethereum yang disimulasikan di mesin Anda.
         </p>
         <code>$ ganache</code>
-        <p>From the list of generated private keys, import the first one to MetaMask.</p>
+        <p>Impor kunci pribadi pertama ke MetaMask dari daftar kunci yang dihasilkan.</p>
       </details>
-
-      <details>
-        <summary>Truffle</summary>
+      <details className="my-3">
+        <summary className="text-primary">Truffle</summary>
         <p>
-          Keep Ganache running and open another terminal. Let's compile and deploy our
-          contracts to Ganache.
+          Biarkan Ganache berjalan dan buka terminal lain. Mari kita kompilasi dan terapkan kontrak kita
+          ke Ganache.
         </p>
         <code>
           {`$ cd truffle\n`}
           {`$ truffle migrate --network development\n`}
           <span className="dim-color">
-            # The `development` network points to Ganache, it's configured in
-            truffle/truffle-config.js on line 45.
+            # Jaringan `development` mengarah ke Ganache, dikonfigurasi di
+            truffle/truffle-config.js pada baris 45.
           </span>
         </code>
       </details>
-    </>
+    </div>
   );
 }
 

@@ -23,7 +23,7 @@ function Demo() {
     </>;
 
   return (
-    <div className="demo">
+    <div id="demo">
       <Title />
       {
         !state.artifact ? <NoticeNoArtifact /> :

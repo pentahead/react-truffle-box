@@ -1,11 +1,11 @@
 function Welcome() {
   return (
     <div className="welcome">
-      <h1>👋 Welcome to the Truffle + React Box!</h1>
+      <h1 className="text-success">👋 Selamat datang!</h1>
       <p>
-        This is everything you need to start using Truffle to write,
-        compile, test, and deploy smart contracts, and interact with
-        them from a React app.
+        Ini adalah semua yang Anda butuhkan untuk mulai menggunakan Truffle untuk menulis,
+        mengompilasi, menguji, dan menerapkan kontrak pintar, serta berinteraksi dengan
+        mereka dari aplikasi React.
       </p>
     </div>
   );
